@@ -1,0 +1,4 @@
+# dsh-mac-access 配置示例（无密钥，全路径）
+# 挂载 dsh-mac-access 时只需 cordis.patch.yml；本文件是文档用途。
+# toolsPath 可选：留空/不写时用随包 tools/mac-access.sh。
+# toolsPath: '/path/to/dsh-mac-access/tools/mac-access.sh'

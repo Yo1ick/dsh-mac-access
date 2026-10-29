@@ -1,0 +1,7 @@
+# dsh-mac-access bundle patch
+# 只注册一个 runtime skill（mac-access）；skill 正文指导 agent 调用随包 tools/mac-access.sh。
+# config 全是路径，无任何密钥；toolsPath 留空时用随包路径（node_modules 场景自动解析）。
+
+- insert:
+    - id: mac-access
+      name: 'dsh-mac-access'

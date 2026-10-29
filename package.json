@@ -1,0 +1,24 @@
+{
+  "name": "dsh-mac-access",
+  "description": "Windows 访问 Mac DSH 链路管理：一键体检、把最新登录 URL 推送给 Windows、部署/更新 Windows 一键脚本与桌面快捷方式（mac-access skill + 随包运维脚本）。",
+  "version": "0.1.0",
+  "type": "module",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "remote-access", "lan", "windows", "skill"],
+  "packageManager": "pnpm@11.7.0",
+  "engines": { "node": ">=22.4.0" },
+  "main": "index.js",
+  "exports": { ".": { "default": "./index.js" } },
+  "files": ["index.js", "skill.md", "tools", "templates", "cordis.patch.yml", "config.example.yaml", "README.md"],
+  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.1" },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yo1ick/dsh-mac-access.git"
+  },
+  "author": "Yo1ick <93521681+Yo1ick@users.noreply.github.com>",
+  "license": "MIT"
+}
